@@ -16,8 +16,11 @@ const {
 
 const dev = NODE_ENV === 'development';
 
+const url = dev ? '/' : 'curso-sapper-avanzado';
+
 polka() // You can also use Express
 	.use(
+		url,
 		compression({ threshold: 0 }),
 		sirv('static', { dev }),
 		sapper.middleware({
