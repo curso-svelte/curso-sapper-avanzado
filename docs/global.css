@@ -1,0 +1,23 @@
+body {
+	margin: 0;
+	font-family: Roboto;
+	font-size: 14px;
+	line-height: 1.5;
+	color: #333;
+}
+
+:root {
+	--primary: #36494A;
+	--red: #F00000;
+	--yellow: #F7BB0E;
+	--black: #29282C;
+	--white: #FFFFFF;
+	--height: 100vh;
+}
+
+
+@media (min-width: 400px) {
+	body {
+		font-size: 16px;
+	}
+}
