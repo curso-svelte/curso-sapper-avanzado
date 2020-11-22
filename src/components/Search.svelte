@@ -1,7 +1,7 @@
 <script>
   import { stores } from '@sapper/app';
   const { session  } = stores();
-  import Avatar from '../../static/avatar.png';
+  // import Avatar from '../../static/avatar.png';
 
   async function logout () {
     if ($session.user) {
@@ -33,14 +33,15 @@
   ::placeholder {
     color: var(--white);
   }
-  img {
+  /* img {
     width: 40px;
     height: 40px;
     cursor: pointer;
-  }
+  } */
 </style>
 
 <div class="Search">
   <input type="text" placeholder="Busca tu película favorita..."/>
-  <img src={Avatar} on:click={logout} alt="login" style="{!$session.user ? 'filter: grayscale(1)': ''}"/>
+  <!-- <img src={Avatar} on:click={logout} alt="login" style="{!$session.user ? 'filter: grayscale(1)': ''}"/> -->
+  <button on:click={logout}>LOGIN</button>
 </div>
